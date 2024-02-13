@@ -104,6 +104,7 @@
   <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="14.0" remote="github" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="everest" />
   <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="everest" />
   <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="everest" />
   <project path="packages/overlays/Themes" name="android_packages_overlays_Themes" remote="everest" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="everest" />
