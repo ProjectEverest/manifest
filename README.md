@@ -13,7 +13,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 1. Run the following commands to sync source
 
 ```
-repo init -u https://github.com/ProjectEverest/android_manifest -b udc
+repo init -u https://github.com/ProjectEverest/android_manifest -b qpr2
 ```
 2. To sync source, enter
 
