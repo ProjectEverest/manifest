@@ -19,6 +19,5 @@
   <project path="prebuilts/tools-parasite" name="prebuilts_tools-parasite" remote="parasite" />
 
   <!-- General repos -->
-  <project path="vendor/google/gms" name="vendor_google_gms" remote="parasite-gitlab" />
   <project path="vendor/google/interfaces" name="vendor_google_interfaces" remote="parasite" />
 </manifest>

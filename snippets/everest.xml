@@ -17,6 +17,9 @@
 
   <!-- Rootdir -->
   <project path="manifest" name="android_manifest" remote="everest" />
+  <project path="art" name="android_art" groups="pdk" remote="everest" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="everest" />
+  <project path="everest-maintainers" name="everest-maintainers" remote="everest" revision="udc" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="everest" />
@@ -91,14 +94,18 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="everest" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="everest" revision="udc"  />
   <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="everest" />
-  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="everest-gitea" revision="qpr2" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk" remote="everest" />
   <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="everest" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="everest" />
   <project path="packages/overlays/Themes" name="android_packages_overlays_Themes" remote="everest"  revision="udc" />
 
+  <!-- System -->
+  <project path="system/core" name="android_system_core" groups="pdk" remote="everest" />
+
   <!-- Vendor -->
   <project path="vendor/certification" name="android_vendor_certification" remote="everest-gitea" />
   <project path="vendor/everest" name="android_vendor_everest" remote="everest" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="everest-gitea" clone-depth="1" />
   <project path="vendor/support" name="android_vendor_support" remote="everest" clone-depth="1" revision="udc"  />
 
   <!-- ProtonAosp -->

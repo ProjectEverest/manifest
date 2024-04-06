@@ -10,8 +10,6 @@
           revision="main" />
 
   <!-- General repos -->
-  <project path="art" name="art" remote="parasite" />
-  <project path="bionic" name="bionic" remote="parasite" />
   <project path="kernel/configs" name="kernel_configs" remote="parasite" />
   <project path="platform_testing" name="platform_testing" remote="parasite" />
 
@@ -60,7 +58,6 @@
   <project path="system/bpf" name="system_bpf" remote="parasite" />
   <project path="system/extras" name="system_extras" remote="parasite" />
   <project path="system/keymaster" name="system_keymaster" remote="parasite" />
-  <project path="system/core" name="system_core" remote="parasite" />
   <project path="system/libhidl" name="system_libhidl" remote="parasite" />
   <project path="system/libziparchive" name="system_libziparchive" remote="parasite" />
   <project path="system/logging" name="system_logging" remote="parasite" />
