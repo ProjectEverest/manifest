@@ -10,9 +10,9 @@
            fetch="https://github.com/ProjectEverest/"
            revision="qpr2" />
 
-  <!-- Gitea (EverestOS) -->
-  <remote  name="everest-gitea"
-           fetch="https://gitea.com/ProjectEverest/"
+  <!-- Gitlab (EverestOS) -->
+  <remote  name="everest-gitlab"
+           fetch="https://gitlab.com/everestos/"
            revision="udc" />
 
   <!-- Rootdir -->
@@ -89,7 +89,7 @@
   <!-- Packages -->
   <project path="packages/apps/BaseCamp" name="android_packages_apps_BaseCamp" remote="everest" />
   <project path="packages/apps/EverestWallpaperStub" name="android_packages_apps_EverestWallpaperStub" remote="everest" revision="udc" />
-  <project path="packages/apps/FaceUnlock" name="android_packages_apps_FaceUnlock" remote="everest-gitea" />
+  <project path="packages/apps/FaceUnlock" name="android_packages_apps_FaceUnlock" remote="everest-gitlab" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="everest" revision="udc" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="everest" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="everest" revision="udc"  />
@@ -103,9 +103,9 @@
   <project path="system/core" name="android_system_core" groups="pdk" remote="everest" />
 
   <!-- Vendor -->
-  <project path="vendor/certification" name="android_vendor_certification" remote="everest-gitea" />
+  <project path="vendor/certification" name="android_vendor_certification" remote="everest-gitlab" />
   <project path="vendor/everest" name="android_vendor_everest" remote="everest" />
-  <project path="vendor/gms" name="android_vendor_gms" remote="everest-gitea" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="everest-gitlab" clone-depth="1" />
   <project path="vendor/support" name="android_vendor_support" remote="everest" clone-depth="1" revision="udc"  />
 
   <!-- ProtonAosp -->
