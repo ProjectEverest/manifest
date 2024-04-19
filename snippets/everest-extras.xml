@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="yaap"
+           fetch="https://github.com/yaap"
+           revision="refs/heads/fourteen" />
+
+  <remote  name="cr"
+           fetch="https://github.com/crdroidandroid"
+           revision="refs/heads/14.0" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="everest" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="yaap" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="yaap" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="yaap" />
+  <project path="packages/apps/Eleven" name="android_packages_apps_Eleven" remote="lineage" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="yaap" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="yaap" />
+  <project path="packages/apps/Glimpse" name="android_packages_apps_Glimpse" remote="lineage" />
+  <project path="packages/apps/Jelly" name="android_packages_apps_Jelly" remote="lineage" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="everest" revision="udc" />
+  <project path="packages/apps/Recorder" name="android_packages_apps_Recorder" remote="lineage" />
+  <project path="packages/apps/Seedvault" name="android_packages_apps_Seedvault" remote="lineage" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="yaap" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="yaap" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="cr" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="cr" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="lineage" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
+</manifest>

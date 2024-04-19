@@ -15,4 +15,7 @@
 
   <!-- Track EverestOS repos -->
   <include name="snippets/everest.xml" />
+
+  <!-- Track Everest extras repos -->
+  <include name="snippets/everest-extras.xml" />
 </manifest>
