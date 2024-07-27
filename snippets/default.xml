@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="gitlab" fetch="https://gitlab.com/" />
+
+  <!-- Track EverestOS repos -->
+  <include name="snippets/everest.xml" />
+
+  <!-- Track Extra repos -->
+  <include name="snippets/extras.xml" />
+
+  <!-- Track TheParasiteProject repos -->
+  <include name="snippets/parasite.xml" />
+</manifest>
