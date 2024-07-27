@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="parasite"
+          fetch="https://github.com/TheParasiteProject/"
+          revision="main" />
+
+  <remote name="parasite-gitlab"
+          fetch="https://gitlab.com/someone5678/"
+          revision="main" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="parasite" />
+  <project path="packages/apps/ParanoidGlyph" name="packages_apps_ParanoidGlyph" remote="parasite" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="parasite-gitlab" />
+  <project path="packages/apps/SystemUIFlagFlipper" name="packages_apps_SystemUIFlagFlipper" remote="parasite" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="parasite" />
+
+  <!-- Prebuilts repos -->
+  <project path="prebuilts/custom-sdk" name="prebuilts_custom-sdk" remote="parasite" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="parasite" />
+</manifest>

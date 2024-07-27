@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub (EverestOS) -->
+  <remote  name="everest"
+           fetch="https://github.com/ProjectEverest/"
+           revision="14" />
+
+  <!-- Gitlab (EverestOS) -->
+  <remote  name="everest-gitlab"
+           fetch="https://gitlab.com/everestos/"
+           revision="14" />
+
+  <!-- Gitea (EverestOS) -->
+  <remote  name="everest-gitea"
+           fetch="https://gitea.com/ProjectEverest/"
+           revision="14" />
+
+  <!-- Rootdir -->
+  <project path="manifest" name="manifest" remote="everest" />
+  <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="everest" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="everest" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="everest" />
+
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="device_everest_sepolicy" remote="everest" />
+
+  <!-- Fading Layout -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="everest" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+
+  <!-- Packages -->
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
+  <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="everest" />
+  <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
+  <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="everest" />
+  <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
+
+  <!-- SDK -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="everest" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="everest" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="everest" />
+
+  <!-- Vendor -->
+  <project path="vendor/extra" name="vendor_extra" remote="everest" />
+  <project path="vendor/lineage" name="vendor_everest" remote="everest" />
+  <project path="vendor/gms" name="vendor_gms" remote="everest-gitea" clone-depth="1" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="everest" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="everest" />
+</manifest>

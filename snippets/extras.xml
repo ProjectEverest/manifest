@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="yaap"
+           fetch="https://github.com/yaap"
+           revision="refs/heads/fourteen" />
+
+  <remote  name="crdroid"
+           fetch="https://github.com/crdroidandroid"
+           revision="refs/heads/14.0" />
+
+  <!-- crDroid -->
+  <project path="art" name="android_art" groups="pdk" remote="crdroid" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="crdroid" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="pdk" remote="crdroid" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="crdroid" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="crdroid" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="crdroid" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="crdroid" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="crdroid" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" groups="pdk" remote="crdroid" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crdroid" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <project path="system/libhwbinder" name="android_system_libhwbinder" groups="pdk" remote="crdroid" />
+
+  <!-- ProtonAosp -->
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" groups="pdk" revision="main" remote="github" />
+
+  <!-- Xiaomi-mediatek-->
+  <project path="device/mediatek/sepolicy_vndr" name="xiaomi-mediatek-devs/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-21" />
+  <project path="hardware/mediatek" name="xiaomi-mediatek-devs/android_hardware_mediatek" remote="github" revision="lineage-21" />
+
+  <!-- YAAP -->
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="yaap" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="yaap" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="yaap" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="yaap" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="yaap" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="yaap" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="yaap" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="yaap" />
+</manifest>
