@@ -14,7 +14,7 @@ Prior to building, you will need basic knowledge of [Git](https://www.atlassian.
 ### Initialize local repository
 
 ```
-repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
+repo init -u https://github.com/ProjectEverest/manifest -b new --git-lfs
 ```
 
 ### Sync up 

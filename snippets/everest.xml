@@ -21,7 +21,7 @@
   <project path="everest-maintainers" name="everest-maintainers" remote="everest" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="everest" >
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="everest" revision="new">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -46,18 +46,18 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="everest" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="everest" revision="new"/>
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="everest" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="everest" />
 
   <!-- Packages -->
-  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" />
+  <project path="packages/apps/BaseCamp" name="packages_apps_BaseCamp" remote="everest" revision="new" />
   <project path="packages/apps/EverestWallpaperStub" name="packages_apps_EverestWallpaperStub" remote="everest" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="everest" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="everest" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="everest" />
   <project path="packages/apps/OmniStyles" name="packages_apps_OmniStyle" remote="everest" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="everest" revision="new" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="everest" />
   <project path="packages/overlays/Themes" name="packages_overlays_Themes" remote="everest" />
   <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="everest" />
